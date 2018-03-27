@@ -55,4 +55,49 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<id>repo-mi</id>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/repo-mi</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<id>repo-mi</id>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/repo-mi</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>repo-it-snapshot</id>
+			<name>libs-snapshot-mi</name>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi-local</url>
+
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+		<repository>
+			<id>repo-it-release</id>
+			<name>libs-release-mi</name>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi-local</url>
+		</repository>
+
+		<site>
+			<id>${project.artifactId}-site</id>
+			<url>${basedir}</url>
+		</site>
+	</distributionManagement>
 </project>
