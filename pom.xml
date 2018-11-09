@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.rwh.pom</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -108,28 +108,28 @@
 
 	<repositories>
 		<repository>
+			<id>repo-it-snapshot</id>
+			<name>libs-snapshot-mi</name>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi-local</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
 			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>repo-it-release</id>
+			<name>libs-release-mi</name>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi-local</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
 				<enabled>true</enabled>
 			</releases>
-			<id>repo-mi</id>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/repo-mi</url>
 		</repository>
 	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<id>repo-mi</id>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/repo-mi</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<distributionManagement>
 		<snapshotRepository>
