@@ -19,6 +19,14 @@
 		<spring.version>5.1.7.RELEASE</spring.version>
 	</properties>
 
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
