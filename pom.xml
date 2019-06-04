@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.rwh.pom</groupId>
+	<groupId>de.hs-heilbronn.mi</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.6.1</version>
+	<version>0.7.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -26,6 +26,37 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<organization>
+		<name>Heilbronn University - Medical Informatics</name>
+		<url>http://www.mi.hs-heilbronn.de</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>hhund</id>
+			<name>Hauke Hund</name>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<email>hauke.hund@hs-heilbronn.de</email>
+			<organization>University of Heilbronn - Medical Informatics</organization>
+			<organizationUrl>http://www.mi.hs-heilbronn.de</organizationUrl>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<name>Sonatype Nexus snapshot repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<name>Sonatype Nexus release repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
@@ -113,6 +144,25 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.1.0</version>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+						<links>
+							<link>https://docs.oracle.com/en/java/javase/11/docs/api</link>
+						</links>
+						<encoding>utf-8</encoding>
+						<show>public</show>
+						<quiet>true</quiet>
+						<use>false</use>
+						<doclint>none</doclint>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -137,11 +187,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
-	<distributionManagement>
-		<repository>
-			<id>libs-release-public</id>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-public</url>
-		</repository>
-	</distributionManagement>
 </project>
