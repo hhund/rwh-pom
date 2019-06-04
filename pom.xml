@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.rwh.pom</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.6.0</version>
+	<version>0.6.1</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -18,6 +18,14 @@
 		<jersey.version>2.28</jersey.version>
 		<spring.version>5.1.7.RELEASE</spring.version>
 	</properties>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<dependencyManagement>
 		<dependencies>
@@ -130,48 +138,10 @@
 		</pluginManagement>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>repo-it-snapshot</id>
-			<name>libs-snapshot-mi</name>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi-local</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-		<repository>
-			<id>repo-it-release</id>
-			<name>libs-release-mi</name>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi-local</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
-	</repositories>
-
 	<distributionManagement>
-		<snapshotRepository>
-			<id>repo-it-snapshot</id>
-			<name>libs-snapshot-mi</name>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi-local</url>
-
-			<uniqueVersion>false</uniqueVersion>
-		</snapshotRepository>
 		<repository>
-			<id>repo-it-release</id>
-			<name>libs-release-mi</name>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi-local</url>
+			<id>libs-release-public</id>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-public</url>
 		</repository>
-
-		<site>
-			<id>${project.artifactId}-site</id>
-			<url>${basedir}</url>
-		</site>
 	</distributionManagement>
 </project>
