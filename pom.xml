@@ -67,7 +67,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/hhund/rwh-pom.git</connection>
 		<developerConnection>scm:git:git@github.com:hhund/rwh-pom.git</developerConnection>
-		<url>http://github.com/hhund/rwh-pom</url>
+		<url>https://github.com/hhund/rwh-pom</url>
 	</scm>
 
 	<dependencyManagement>
