@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 
 	<name>rwh-pom</name>
-	<description>Parent pom used for multiple projects at Heilbronn University</description>
+	<description>Parent pom used for multiple projects at Heilbronn University of Applied Sciences, Faculty of Informatics</description>
 	<url>https://github.com/hhund/rwh-pom</url>
 
 	<properties>
@@ -35,7 +35,7 @@
 
 	<organization>
 		<name>Heilbronn University of Applied Sciences, Faculty of Informatics</name>
-		<url>http://www.mi.hs-heilbronn.de</url>
+		<url>https://www.hs-heilbronn.de/it</url>
 	</organization>
 
 	<developers>
@@ -47,7 +47,7 @@
 			</roles>
 			<email>hauke.hund@hs-heilbronn.de</email>
 			<organization>Heilbronn University of Applied Sciences, Faculty of Informatics</organization>
-			<organizationUrl>http://www.mi.hs-heilbronn.de</organizationUrl>
+			<organizationUrl>https://www.hs-heilbronn.de/hauke.hund</organizationUrl>
 		</developer>
 	</developers>
 
