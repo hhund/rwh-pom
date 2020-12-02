@@ -5,10 +5,9 @@ Parent pom used for multiple projects at Heilbronn University of Applied Science
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.hs-heilbronn.mi/rwh-pom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.hs-heilbronn.mi/rwh-pom)
 
 ```
-<dependency>
-    <groupId>de.hs-heilbronn.mi</groupId>
-    <artifactId>rwh-pom</artifactId>
-    <version>0.12.0</version>
-    <type>pom</type>
-</dependency>
+<parent>
+	<groupId>de.hs-heilbronn.mi</groupId>
+	<artifactId>rwh-pom</artifactId>
+	<version>0.13.0</version>
+</parent>
 ```
