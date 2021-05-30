@@ -4,7 +4,7 @@
 
 	<groupId>de.hs-heilbronn.mi</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.13.0</version>
+	<version>0.14.0</version>
 	<packaging>pom</packaging>
 
 	<name>rwh-pom</name>
@@ -17,12 +17,12 @@
 		<compileTarget>11</compileTarget>
 
 		<slf4j.version>1.8.0-beta4</slf4j.version>
-		<log4j.version>2.14.0</log4j.version>
+		<log4j.version>2.14.1</log4j.version>
 
-		<jetty.version>9.4.35.v20201120</jetty.version>
-		<jersey.version>2.32</jersey.version>
-		<spring.version>5.3.1</spring.version>
-		<junit.version>4.13.1</junit.version>
+		<jetty.version>9.4.41.v20210516</jetty.version>
+		<jersey.version>2.34</jersey.version>
+		<spring.version>5.3.7</spring.version>
+		<junit.version>4.13.2</junit.version>
 	</properties>
 
 	<licenses>
@@ -155,7 +155,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>3.3.0</version>
 					<configuration>
 						<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 						<links>
@@ -196,7 +196,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-gpg-plugin</artifactId>
-					<version>1.6</version>
+					<version>3.0.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
