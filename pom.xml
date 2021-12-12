@@ -4,7 +4,7 @@
 
 	<groupId>de.hs-heilbronn.mi</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.16.0</version>
+	<version>0.17.0</version>
 	<packaging>pom</packaging>
 
 	<name>rwh-pom</name>
@@ -17,11 +17,11 @@
 		<compileTarget>11</compileTarget>
 
 		<slf4j.version>1.8.0-beta4</slf4j.version>
-		<log4j.version>2.14.1</log4j.version>
+		<log4j.version>2.15.0</log4j.version>
 
 		<jetty.version>9.4.44.v20210927</jetty.version>
 		<jersey.version>2.35</jersey.version>
-		<spring.version>5.3.11</spring.version>
+		<spring.version>5.3.13</spring.version>
 		<junit.version>4.13.2</junit.version>
 	</properties>
 
