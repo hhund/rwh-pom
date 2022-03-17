@@ -4,7 +4,7 @@
 
 	<groupId>de.hs-heilbronn.mi</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.18.0</version>
+	<version>0.19.0</version>
 	<packaging>pom</packaging>
 
 	<name>rwh-pom</name>
@@ -17,11 +17,11 @@
 		<compileTarget>11</compileTarget>
 
 		<slf4j.version>1.8.0-beta4</slf4j.version>
-		<log4j.version>2.16.0</log4j.version>
+		<log4j.version>2.17.2</log4j.version>
 
-		<jetty.version>9.4.44.v20210927</jetty.version>
+		<jetty.version>9.4.45.v20220203</jetty.version>
 		<jersey.version>2.35</jersey.version>
-		<spring.version>5.3.13</spring.version>
+		<spring.version>5.3.16</spring.version>
 		<junit.version>4.13.2</junit.version>
 	</properties>
 
@@ -117,7 +117,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
+					<version>3.10.1</version>
 					<configuration>
 						<source>${compileSource}</source>
 						<target>${compileTarget}</target>
@@ -126,7 +126,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>3.2.2</version>
 					<configuration>
 						<archive>
 							<manifest>
@@ -155,7 +155,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.3.1</version>
+					<version>3.3.2</version>
 					<configuration>
 						<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 						<links>
