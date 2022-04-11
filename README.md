@@ -8,6 +8,6 @@ Parent pom used for multiple projects at Heilbronn University of Applied Science
 <parent>
 	<groupId>de.hs-heilbronn.mi</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.19.0</version>
+	<version>0.20.0</version>
 </parent>
 ```
