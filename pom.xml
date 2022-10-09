@@ -4,7 +4,7 @@
 
 	<groupId>de.hs-heilbronn.mi</groupId>
 	<artifactId>rwh-pom</artifactId>
-	<version>0.20.0</version>
+	<version>0.21.0</version>
 	<packaging>pom</packaging>
 
 	<name>rwh-pom</name>
@@ -17,11 +17,11 @@
 		<compileTarget>11</compileTarget>
 
 		<slf4j.version>1.8.0-beta4</slf4j.version>
-		<log4j.version>2.17.2</log4j.version>
+		<log4j.version>2.19.0</log4j.version>
 
-		<jetty.version>9.4.46.v20220331</jetty.version>
-		<jersey.version>2.35</jersey.version>
-		<spring.version>5.3.18</spring.version>
+		<jetty.version>9.4.49.v20220914</jetty.version>
+		<jersey.version>2.37</jersey.version>
+		<spring.version>5.3.23</spring.version>
 		<junit.version>4.13.2</junit.version>
 	</properties>
 
@@ -126,7 +126,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.2.2</version>
+					<version>3.3.0</version>
 					<configuration>
 						<archive>
 							<manifest>
@@ -155,7 +155,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.3.2</version>
+					<version>3.4.1</version>
 					<configuration>
 						<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
 						<links>
@@ -171,27 +171,27 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M5</version>
+					<version>3.0.0-M7</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-failsafe-plugin</artifactId>
-					<version>3.0.0-M5</version>
+					<version>3.0.0-M7</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-shade-plugin</artifactId>
-					<version>3.2.4</version>
+					<version>3.4.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.4.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.2.0</version>
+					<version>3.3.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -201,12 +201,12 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
-					<version>3.0.0</version>
+					<version>3.1.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>3.2.0</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
